@@ -3,6 +3,7 @@ def isValid(e):
     if(len(sp) != 2):
         return "Not an valid email format"
     username = sp[0]
+    # username = username.strip()
     for x in username:
         if x == " " or "&" or "=" or "_" or "'" or "-" or "+" or "," or "<" or ">":
             return "There are invalid characters in this email address"
